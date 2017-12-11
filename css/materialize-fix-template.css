@@ -1,13 +1,3 @@
-/* fix for broken search box */
-
-
-/*http://stackoverflow.com/questions/36825618/materialize-css-navbar-search-is-broken*/
-
-input[type="search"] {
-  height: 64px !important;
-  /* or height of nav */
-}
-
 nav .nav-wrapper form,
 nav .nav-wrapper form .input-field {
   height: 100%;
@@ -107,6 +97,22 @@ th {
 
 .material-icons {
   font-size: 2rem !important;
+}
+
+.card1-header-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 63%;
+  overflow: hidden;
+  float: left;
+}
+
+.divider {
+  width: 100%;
+}
+
+.right-border {
+  border-right: 1px solid #e0e0e0;
 }
 
 @media only screen and (max-width: 992px) {
