@@ -1,0 +1,116 @@
+/* fix for broken search box */
+
+
+/*http://stackoverflow.com/questions/36825618/materialize-css-navbar-search-is-broken*/
+
+input[type="search"] {
+  height: 64px !important;
+  /* or height of nav */
+}
+
+nav .nav-wrapper form,
+nav .nav-wrapper form .input-field {
+  height: 100%;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+main {
+  padding-left: 250px;
+}
+
+td,
+th {
+  padding: 5px;
+}
+
+.forum-icon {
+  margin-right: 10px;
+}
+
+.container {
+  width: 90%;
+  padding-top: 3rem;
+  margin-left: 4%;
+}
+
+.chart-container {
+  position: relative;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 600 !important
+}
+
+.dashboard-text {
+  margin-left: 25%;
+  color: #757575;
+  font-size: 1.5rem;
+}
+
+#slide-out {
+  top: 65px;
+  text-align: right;
+}
+
+#searchForm i,
+#searchForm input {
+  color: #9e9e9e;
+}
+
+#slide-out i,
+#slide-out a {
+  color: white;
+}
+
+#table-school tbody tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+#table-school td:nth-child(2),
+#table-school th:nth-child(2) {
+  text-align: right;
+}
+
+.card-content .section {
+  color: #757575;
+}
+
+.section {
+  padding-bottom: 0px;
+}
+
+.card .card-title {
+  font-size: 1.1rem;
+}
+
+.user {
+  width: 35px;
+  vertical-align: middle;
+  margin: 0px 10px;
+}
+
+.side-nav {
+  width: 200px;
+}
+
+.side-nav a:hover {
+  border-right: 5px solid gold;
+}
+
+#card1 .btn-flat {
+  padding: 0px;
+}
+
+.material-icons {
+  font-size: 2rem !important;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-left: 0px;
+  }
+}

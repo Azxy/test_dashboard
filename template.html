@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize-fix-template.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="iconfont/material-icons.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <ul id="slide-out" class="side-nav fixed grey darken-3">
+      <li>
+        <a href="sass.html">
+          <i class="material-icons">dashboard</i> Overview
+        </a>
+      </li>
+      <li>
+        <a href="badges.html">
+          <i class="material-icons">assignment_ind</i> Candidates
+        </a>
+      </li>
+      <li>
+        <a href="collapsible.html">
+          <i class="material-icons">timeline</i> Analytics
+        </a>
+      </li>
+    </ul>
+
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white">
+          <a href="#" data-activates="slide-out" class="button-collapse">
+            <i class="material-icons black-text">menu</i>
+          </a>
+          <img src="img/business-support-2-b.png" alt="" class="user">
+          <span class="blue-text">Welcome, Floyd</span>
+          <span class="dashboard-text">Dashboard</span>
+          <form class="right hide-on-med-and-down" id="searchForm">
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label for="search">
+                <i class="material-icons">search</i>
+              </label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+          <i class="material-icons grey-text text-darken-1 right forum-icon">forum</i>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <!-- Page Content goes here -->
+      <div class="row">
+        <div class="col s12 m9 l7 offset-m2">
+
+          <div class="card" id="card1">
+            <div class="card-content card-title">
+              <i class="material-icons grey-text text-darken-1 left">remove_red_eye</i>
+              <span class="bold">Candidate profile: Syd Barret</span>
+              <a class="waves-effect waves-light btn-flat right">
+                <i class="material-icons">keyboard_arrow_right</i>
+              </a>
+              <a class="waves-effect waves-light btn-flat right">
+                <i class="material-icons">keyboard_arrow_left</i>
+              </a>
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+              <br/>
+              <div class="row">
+                <div class="col s7">
+                  <span class="blue-text bold">Experience:</span>
+                  <br/>
+                  <ul class="browser-default">
+                    <li>2014-2016 - Senior Software Engineer, Google</li>
+                    <li>2012-2014 - Software Engineer at Microsoft</li>
+                  </ul>
+                  <br/>
+                  <i class="material-icons grey-text text-darken-1 left">insert_drive_file</i>SYD+BARRET_Bangalore.docx
+                </div>
+                <div class="col s5">
+                  <span class="blue-text bold">Highlights:</span>
+                  <br/>
+                  <ul class="browser-default">
+                    <li>Filed 3 patents</li>
+                    <li>Puublished a HPCA paper on Multicore Architechture</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col s12 m9 l5 offset-m2">
+          <div class="card">
+            <div class="card-content card-title valign-wrapper">
+              <i class="valign material-icons grey-text text-darken-1 left">hourglass_empty</i>
+              <span class="bold">Resume processing queue</span>
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+              <div class="section">
+                <p>DAVID+GILMOUR_Bengaluru.docx</p>
+                <div class="progress  blue lighten-4">
+                  <div id="progress-bar1" class="determinate blue" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="section">
+                <p>ROGER+WATERS.docx.pdf</p>
+                <div class="progress  blue lighten-4">
+                  <div id="progress-bar2" class="determinate blue" style="width: 0%"></div>
+                </div>
+              </div>
+              <div class="section">
+                <p>NICK+MANSON.docx</p>
+                <div class="progress  blue lighten-4">
+                  <div class="determinate blue" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="section">
+                <p>RICHARD+WRIGHT.docx</p>
+                <div class="progress  blue lighten-4">
+                  <div class="determinate blue" style="width: 100%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m9 l7 offset-m2">
+
+          <div class="card">
+            <div class="card-content card-title">
+              <i class="material-icons grey-text text-darken-1 left">insert_chart</i>
+              <span class="bold">CGPA Histogram</span>
+            </div>
+            <div class="divider"></div>
+            <div class="chart-container">
+              <canvas id="cgpaChart"></canvas>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col s12 m9 l5 offset-m2">
+          <div class="card">
+            <div class="card-content card-title valign-wrapper">
+              <i class="valign material-icons grey-text text-darken-1 left">school</i>
+              <span class="bold">Top schools</span>
+            </div>
+            <div class="divider"></div>
+            <div class="card-content">
+              <table id="table-school">
+                <thead class="blue-text">
+                  <th>Schools</th>
+                  <th>Appplicants</th>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <script type="text/javascript" src="js/Chart.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script>
+    'use strict';
+    $(".button-collapse").sideNav();
+
+    top_schools_data.forEach(function (element) {
+      var row = "<tr><td>" + element.school + "</td><td>" + element.applicant + "</td></tr>";
+      $("#table-school tbody").append(row);
+    });
+
+    var ctx = document.getElementById("cgpaChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: cgpa_data.map(function (x) {
+          return x.cgpa;
+        }),
+        datasets: [{
+          label: 'Count',
+          data: cgpa_data.map(function (x) {
+            return x.count;
+          }),
+          backgroundColor: '#a9d6f8',
+          borderColor: '#a9d6f8',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          xAxes: [{
+            gridLines: {
+              display: false
+            }
+          }],
+          yAxes: [{
+            display: false
+          }]
+        },
+        legend: {
+          display: false
+        }
+      }
+    });
+
+    function setProgressBar(id, interval, value) {
+      var len = 0;
+      var ele = $(id);
+      var x = setInterval(function () {
+        len = len + Math.floor(Math.random() * value);
+        len = len > 100 ? 100 : len;
+        ele.css("width", len + '%');
+        if (len == 100) {
+          clearInterval(x);
+        }
+      }, interval);
+    }
+
+    setProgressBar("#progress-bar1", 100, 5);
+    setProgressBar("#progress-bar2", 150, 3);
+  </script>
+</body>
+
+</html>
